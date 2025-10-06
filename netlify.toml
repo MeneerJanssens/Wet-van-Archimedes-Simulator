@@ -1,1 +1,12 @@
+# Dit bestand configureert de build-instellingen voor Netlify.
 
+[build]
+  # De build-opdracht om uit te voeren. Dit roept de "build" script in package.json aan.
+  command = "npm run build"
+  
+  # De map die Netlify moet publiceren na de build (standaard voor Create React App).
+  publish = "build"
+
+# Optionele instelling voor als u Netlify Functions zou gebruiken (niet nodig voor deze app, maar goede gewoonte)
+[functions]
+  directory = "netlify/functions"
